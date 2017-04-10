@@ -9,7 +9,8 @@ deliverables: "1 HTML file, 1 JS file"
 ## Overview
 
 - *Fork this repository.*
-- Write the Javascript program using `variables`, `prompt` and `loops`.
+- Write the Javascript program using variables, `prompt()` and loops.
+- The text a user enters into the `prompt()` should be spit out to the page 10 times.
 - *Run it through Markbot and make sure it passes all the checks.*
 
 ---

@@ -1,11 +1,12 @@
-# Letter looper
-
-- Approx. completion time: **.75 hour**
-- Deliverables: **1 HTML file, 1 JS file**
-
+---
+summary: "Make a small Javascript program that accepts a letter and spits it out 10 times."
+time: "1 hour"
+deliverables: "1 HTML file, 1 JS file"
 ---
 
-**Make a small Javascript program that accepts a letter and spits it out 10 times.**
+# Letter looper
+
+## Overview
 
 - *Fork this repository.*
 - Write the Javascript program using `variables`, `prompt` and `loops`.
@@ -13,7 +14,7 @@
 
 ---
 
-## Goal
+## Details
 
 The output in the browser should look like this:
 
@@ -30,6 +31,10 @@ a
 a
 ```
 
+---
+
+## Goal
+
 Create the interaction shown in the linked video.
 
 - [**Watch this video to see how it interacts.**](https://youtu.be/-zgfS9warGw)
@@ -38,4 +43,4 @@ Create the interaction shown in the linked video.
 
 ## Hand in
 
-Drop this folder into your Markbot application. Make sure to fix all the errors. And submit to Canvas using Markbot.
+Drop this folder into your Markbot application. Make sure to fix all the errors. And submit online.

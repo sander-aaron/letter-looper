@@ -1,24 +1,44 @@
-repo: "letter-looper"
-canvasCourse: "467503"
-canvasAssignment: "4202493"
+repo: 'letter-looper'
 
 naming: true
-commits: 1
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
 
 html:
-  - path: "index.html"
+  - path: 'index.html'
     valid: true
     bestPractices: true
     has:
-      - "script"
+      - 'script[src="js/main.js"]'
+    hasNot:
+      - ['link', 'CSS isn’t necessary to complete this assignment']
+      - ['body :not(script)', 'The `<script>` tag should be the only tag inside `<body>` — no other HTML is needed']
 
 js:
-  - path: "js/main.js"
+  - path: 'js/main.js'
     valid: true
     bestPractices: true
     search:
-      - "var"
-      - "prompt"
-      - "for"
-      - "(9|10|11)"
-      - "document.write"
+      - 'var'
+      - 'prompt'
+      - 'for'
+      - ['(9|10|11)', 'The letter should be output 10 times.']
+      - 'document.write'
+      - '<br>'
+
+functionality:
+  - path: 'index.html'
+    setup: |
+      window.prompt = function () {
+        return 'a';
+      }
+    tests:
+      - |
+        if (document.body.textContent.trim().length !== 10) fail(`There are ${document.body.textContent.trim().length} letters spit out to the page but there should be 10`);
+        pass();
+

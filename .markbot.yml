@@ -39,6 +39,8 @@ functionality:
       }
     tests:
       - |
-        if (document.body.textContent.trim().length !== 10) fail(`There are ${document.body.textContent.trim().length} letters spit out to the page but there should be 10`);
+        let content = document.body.textContent.trim().replace(/[\s\r\n\t]/g, '');
+
+        if (content.length !== 10) fail(`There are ${content.length} letters written out to the page but there should be 10`);
         pass();
 

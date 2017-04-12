@@ -5,7 +5,7 @@ restrictFileTypes: true
 liveWebsite: true
 
 git:
-  numCommits: 2
+  numCommits: 1
   allCommitted: true
   allSynced: true
 
